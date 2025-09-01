@@ -12,11 +12,6 @@ const fastify = Fastify({ logger: true });
 
 // Register plugins
 await fastify.register(dbConnector);
-// Register MongoDB plugin
-// await fastify.register(fastifyMongo, {
-//   forceClose: true,
-//   url: process.env.MONGO_URI,   // e.g. mongodb://127.0.0.1:27017/mydb
-// });
 await fastify.register(fastifyJwt, { secret: process.env.JWT_SECRET });
 
 // Routes
