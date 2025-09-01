@@ -25,6 +25,6 @@ export default async function authRoutes(fastify) {
     if (!isMatch) return reply.status(400).send({ message: "Invalid credentials" });
 
     const token = fastify.jwt.sign({ id: user._id, role: user.role });
-    return { token };
+    return { message:"user loggedin",token: token };
   });
 }
