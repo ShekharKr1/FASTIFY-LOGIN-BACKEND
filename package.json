@@ -1,0 +1,25 @@
+{
+  "name": "fastify-login-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "seed": "node seedAdmin.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "@fastify/jwt": "^10.0.0",
+    "@fastify/mongodb": "^9.0.2",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^17.2.1",
+    "fastify": "^5.5.0",
+    "fastify-plugin": "^5.0.1"
+  }
+}
